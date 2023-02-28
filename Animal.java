@@ -1,27 +1,11 @@
 public class Animal {
-    private String name;
+    private String nombre; 
 
-    public Animal(String name) {
-        this.name = name;
+    public Animal(String nombre) {
+        this.nombre = nombre;
     }
 
-    public void makeSound() {
-        System.out.println("El animal hace un sonido");
-    }
-}
-
-public class Cat extends Animal {
-    private int age;
-
-    public Cat(String name, int age) {
-        super(name);
-        this.age = age;
-    }
-
-    @Override
-    public void makeSound() {
-        super.makeSound();
-        System.out.println("El gato maúlla");
+    public void emitirSonido() {
+        System.out.println("El animal emite un sonido");
     }
 }
-
